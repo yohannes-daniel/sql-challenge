@@ -124,14 +124,14 @@ SELECT
 e.emp_no,
 e.last_name,
 e.first_name,
-d.dept_no
+d.dept_name
 
 FROM employees as e
 INNER JOIN dept_emp as de
 ON e.emp_no = de.emp_no
 INNER JOIN departments as d
 ON de.dept_no = d.dept_no
-WHERE d.dept_no = 'd007';
+WHERE d.dept_name = 'Sales';
 
 -- 7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and
 -- department name.
